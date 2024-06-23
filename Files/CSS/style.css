@@ -1,0 +1,357 @@
+/*
+1.  General css (Reset code)
+2.  Header
+3.  Welcome-hero
+4.  About me 
+5.  Education
+6.  Skill
+7.  Experience
+8.  Contact
+*/
+
+/* Universal and body styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* Header and navigation */
+.header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 1.5em;
+}
+
+.header .main-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.header .main-menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Add custom styles for search bar */
+.search-form {
+  display: inline-block;
+}
+
+.search-form input[type="text"] {
+  color: #000; /* Set text color to dark */
+  padding: 5px;
+  border: 1px solid #000; /* Set border color to dark */
+  border-radius: 3px;
+}
+
+.search-form button {
+  color: #fff; /* Set button text color to dark */
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Hero section */
+.hero-area {
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  height: 890px;
+}
+
+.hero-area h1 {
+  font-size: 3em;
+}
+
+.hero-area p {
+  font-size: 2em;
+}
+
+.resume-download {
+  padding: 500px 0 0 0;
+}
+
+.btn {
+  font-weight: 700;
+  border-radius: 300px;
+  text-transform: uppercase;
+  border-color: #636370;
+}
+
+.btn-primary {
+  background-color: #636370;
+}
+
+.btn-primary:hover {
+  background-color: #99999c;
+  border-color: #99999c;
+  border: 8px;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+}
+
+.button-container {
+  display: block;
+  width: 100%; /* Ensure container is full width */
+}
+
+.center-button {
+  display: block; /* Ensure the button is block-level */
+  margin: 0 auto; /* Center the button */
+  padding: 10px 20px;
+  border: none;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Timeline section */
+.timeline {
+  padding: 50px 0;
+}
+
+.container-timeline {
+  position: relative;
+  width: 50%;
+  padding: 10px 40px;
+  box-sizing: border-box;
+}
+
+.container-timeline.left {
+  left: 0;
+}
+
+.container-timeline.right {
+  left: 50%;
+}
+
+.container-timeline::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border: 4px solid #333;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.container-timeline.left::after {
+  left: -17px;
+}
+
+.container-timeline.right::after {
+  right: -17px;
+}
+
+.content-timeline {
+  padding: 20px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 6px;
+}
+
+.timeline-title h4 {
+  margin: 0 0 10px;
+}
+
+.timeline-text p {
+  margin: 0;
+}
+
+/* Skills section */
+.skill-area {
+  padding: 50px 0;
+  background: #f8f8f8;
+}
+
+.single-skill {
+  margin-bottom: 20px;
+}
+
+.progress {
+  background: #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 25px;
+}
+
+.progress-bar {
+  background: #333;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Experience section */
+.experience-area {
+  padding: 50px 0;
+}
+
+.single-experience {
+  margin-bottom: 20px;
+}
+
+.single-experience h3 {
+  margin: 0;
+}
+
+.single-experience h4 {
+  margin: 5px 0;
+}
+
+/* Profile section */
+.profile-area {
+  padding: 50px 0;
+  background: #f8f8f8;
+}
+
+.profile-title h2 {
+  margin-bottom: 20px;
+}
+
+.profile-item {
+  display: flex;
+  align-items: center;
+}
+
+.single-profile-txt {
+  flex: 1;
+  padding: 20px;
+}
+
+.profile-social-icon ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+
+.profile-social-icon ul li a {
+  color: #333;
+  font-size: 1.5em;
+}
+
+/* Portfolio section */
+.portfolio-area {
+  padding: 50px 0;
+}
+
+.portfolio-title h2 {
+  margin-bottom: 20px;
+}
+
+.single-portfolio {
+  margin-bottom: 20px;
+}
+
+.single-portfolio img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.single-portfolio h3 {
+  margin: 10px 0 0;
+}
+
+/* Clients section */
+.clients-area {
+  padding: 50px 0;
+  background: #f8f8f8;
+}
+
+.clients-title h2 {
+  margin-bottom: 20px;
+}
+
+.single-client {
+  margin-bottom: 20px;
+}
+
+.single-client img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Contact section */
+.contact {
+  padding: 50px 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-info i {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  border: none;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px 0;
+  background: #333;
+  color: #fff;
+  text-align: center;
+}
